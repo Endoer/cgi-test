@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css"> 
+    <link rel="stylesheet" href="/styles/bootstrap_css/bootstrap.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">    -->
+
+</head>
+
+<body>
+    <div class="gameBlock">
+    <form action="/cgi-bin/form.py" class ="gameForm">
+        <div class="h1" >Игра угадай число</div>
+        <div class="form-label" id="greating"></div>
+        <div class="inputButton">
+            <input class="form-control" id="answerNumber" type="number" name="PlayerNumber" autofocus>
+            <button class="btn btn-primary" id="checkButton">Проверить</button>
+            <input class="btn btn-primary" type="button" onclick=restart() value="Заново">
+        </div>
+        <div class="form-label" id="status"><hr>Я только что загадал новое число</div>
+    </form>
+</div>
+</body>
+
+</html>
